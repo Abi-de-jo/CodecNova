@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+:root {
+  --primary-blue: #5e8df4;
+  --secondary-blue: #679ede;
+  --light-blue: #65a9b9;
+  --background-cream: #fffffd;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}
