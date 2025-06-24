@@ -1,3 +1,5 @@
+import { lazy, Suspense } from "react";
+
 import Header from "./Components/Header";
 import TopBar from "./Components/TopBar";
 import HeroSlider from "./Components/HeroSlider";
@@ -13,29 +15,29 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import OurLeaders from "./Components/OurLeaders ";
-import WhoWeAreSingle from "./Components/WhoWeAreSingle";
-import Insights from "./Components/Insights";
-import ContactUs from "./Components/ContactUs";
-import Careers from "./Components/Careers ";
-import FunctionalTesting from "./Services/FunctionalTesting";
-import PerformanceTesting from "./Services/PerformanceTesting";
-import MobileTesting from "./Services/MobileTesting";
-import ScrollToTop from "./Components/ScrollToTop";
-import DataAnalyticsTesting from "./Services/DataAnalyticsTesting";
-import AgileTesting from "./Services/AgileTesting";
-import TestAutomation from "./Services/TestAutomation";
-import IoTTesting from "./Services/IoTTesting";
-import NonFunctionalTesting from "./Services/NonFunctionalTesting";
-import SecurityTesting from "./Services/SecurityTesting";
-import TestProcessConsulting from "./Services/TestProcessConsulting";
-import RPA from "./Services/RPA";
-import QualityAssurance from "./Services/QualityAssurance";
-import TestDataManagement from "./Services/TestDataManagement";
-import TestEnvironmentManagement from "./Services/TestEnvironmentManagement";
-import ApiTesting from "./Services/ApiTesting";
-import CiCdPipeline from "./Services/CiCdPipeline";
-import SingleArticle from "./Components/SingleArticle";
-import NOTFound from "./Components/NOTFound";
+const WhoWeAreSingle = lazy(() => import("./Components/WhoWeAreSingle"));
+const Insights = lazy(() => import("./Components/Insights"));
+const ContactUs = lazy(() => import("./Components/ContactUs"));
+const Careers = lazy(() => import("./Components/Careers "));
+const FunctionalTesting = lazy(() => import("./Services/FunctionalTesting"));
+const PerformanceTesting = lazy(() => import("./Services/PerformanceTesting"));
+const MobileTesting = lazy(() => import("./Services/MobileTesting"));
+const ScrollToTop = lazy(() => import("./Components/ScrollToTop"));
+const DataAnalyticsTesting = lazy(() => import("./Services/DataAnalyticsTesting"));
+const AgileTesting = lazy(() => import("./Services/AgileTesting"));
+const TestAutomation = lazy(() => import("./Services/TestAutomation"));
+const IoTTesting = lazy(() => import("./Services/IoTTesting"));
+const NonFunctionalTesting = lazy(() => import("./Services/NonFunctionalTesting"));
+const SecurityTesting = lazy(() => import("./Services/SecurityTesting"));
+const TestProcessConsulting = lazy(() => import("./Services/TestProcessConsulting"));
+const RPA = lazy(() => import("./Services/RPA"));
+const QualityAssurance = lazy(() => import("./Services/QualityAssurance"));
+const TestDataManagement = lazy(() => import("./Services/TestDataManagement"));
+const TestEnvironmentManagement = lazy(() => import("./Services/TestEnvironmentManagement"));
+const ApiTesting = lazy(() => import("./Services/ApiTesting"));
+const CiCdPipeline = lazy(() => import("./Services/CiCdPipeline"));
+const SingleArticle = lazy(() => import("./Components/SingleArticle"));
+const NOTFound = lazy(() => import("./Components/NOTFound"));
 
 function App() {
   return (
@@ -46,6 +48,7 @@ function App() {
         <TopBar />
         <Header />
 
+        <Suspense fallback={<div className="text-center p-8">Loading...</div>}> 
         <Routes>
           <Route
             path="/"
@@ -247,6 +250,7 @@ function App() {
           <Route path="/*" element={<NOTFound />} />
         </Routes>
 
+        </Suspense>
         <Footer />
 
         <ToastContainer
@@ -262,6 +266,7 @@ function App() {
           theme="colored"
         />
       </Router>
+    
     </div>
   );
 }
