@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
  
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import OurLeaders from "./Components/OurLeaders ";
+// import OurLeaders from "./Components/OurLeaders ";
 import WhoWeAreSingle from "./Components/WhoWeAreSingle";
 import Insights from "./Components/Insights";
 import ContactUs from "./Components/ContactUs";
@@ -34,6 +34,8 @@ import TestDataManagement from "./Services/TestDataManagement";
 import TestEnvironmentManagement from "./Services/TestEnvironmentManagement";
 import ApiTesting from "./Services/ApiTesting";
 import CiCdPipeline from "./Services/CiCdPipeline";
+import SingleArticle from "./Components/SingleArticle";
+import NOTFound from "./Components/NOTFound";
 
 function App() {
   return (
@@ -59,14 +61,14 @@ function App() {
               </>
             }
           />
-          <Route
+          {/* <Route
             path="/our-leaders"
             element={
               <>
                 <OurLeaders />
               </>
             }
-          />
+          /> */}
           <Route
             path="/our-vision"
             element={
@@ -252,6 +254,11 @@ function App() {
               </>
             }
           />
+
+
+<Route path="/insights/:id" element={<SingleArticle />} />
+<Route path ="/*" element={<NOTFound />} />
+
         </Routes>
 
         <Footer />

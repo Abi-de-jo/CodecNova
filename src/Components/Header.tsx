@@ -11,7 +11,7 @@ const Header = () => {
       name: "Who We Are",
       link: "#",
       dropdown: [
-        { name: "Our Leaders", link: "/our-leaders" },
+        // { name: "Our Leaders", link: "/our-leaders" },
         { name: "Our Vision", link: "/our-vision" },
       ],
     },
