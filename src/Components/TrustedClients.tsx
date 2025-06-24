@@ -36,6 +36,7 @@ const clientLogos = [
             {clientLogos.concat(clientLogos).map((logo, index) => (
               <div key={index} className="min-w-[220px] flex items-center justify-center backdrop-blur-md rounded-md shadow-md ">
                 <img
+                loading="lazy"
                   src={logo}
                   alt={`Client ${index}`}
                   className="w-full object-contain border border-[var(--primary-blue)] rounded-md grayscale hover:grayscale-0 transition-all duration-300"

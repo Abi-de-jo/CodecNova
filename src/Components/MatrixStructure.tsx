@@ -35,9 +35,10 @@ const MatrixStructure = () => {
   
            <div className="flex justify-center animate-fadeIn">
             <img
-              src="/image1.jpg"
+              src="/image1.webp"
               alt="How We Work Flowchart"
               className="rounded-2xl shadow-xl w-full max-w-[600px]"
+              loading="lazy"
             />
           </div>
         </div>

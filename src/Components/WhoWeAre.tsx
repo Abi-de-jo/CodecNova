@@ -46,6 +46,7 @@ const WhoWeAre = () => {
           </h1>
           
           <img
+          loading="lazy"
             src="https://cdn.pixabay.com/photo/2013/01/26/04/50/man-76202_1280.jpg"
             alt="Who we are"
             className="rounded-xl mb-6 w-full h-[355px] object-cover shadow-md"

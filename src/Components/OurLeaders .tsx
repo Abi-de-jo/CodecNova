@@ -53,6 +53,7 @@ const OurLeaders = () => {
                 <img
                   src={leader.image}
                   alt={leader.name}
+                  loading="lazy"
                   className="w-36 h-36 rounded-full border-4 inline-block border-white/90 object-cover shadow-xl mb-5 transition-transform duration-300 group-hover:scale-105"
                 />
                 <h3 className="text-2xl font-bold mb-2">{leader.name}</h3>

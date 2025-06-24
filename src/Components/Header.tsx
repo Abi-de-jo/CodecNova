@@ -62,6 +62,7 @@ const Header = () => {
                     {item.dropdown.map((sub, i) => (
                       <a
                         key={i}
+                        aria-label={sub.name}
                         href={sub.link}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-100"
                       >
@@ -85,6 +86,7 @@ const Header = () => {
                         {col.map((service, i) => (
                           <li
                             key={i}
+                            aria-label={service.name}
                             className="text-gray-700 hover:text-orange-500 text-lg cursor-pointer transition whitespace-nowrap"
                           >
                             <Link to={service.link}>{service.name}</Link>
@@ -99,6 +101,7 @@ const Header = () => {
               return (
                 <a
                   key={idx}
+                  aria-label={item.name}
                   href={item.link}
                   className="hover:text-orange-500 transition"
                 >
@@ -123,13 +126,14 @@ const Header = () => {
             if (item.dropdown) {
               return (
                 <details key={idx} className="group">
-                  <summary className="text-gray-700 font-semibold cursor-pointer hover:text-orange-500">
+                  <summary aria-label={item.name} className="text-gray-700 font-semibold cursor-pointer hover:text-orange-500">
                     {item.name}
                   </summary>
                   <div className="ml-4 mt-2 space-y-1">
                     {item.dropdown.map((sub, i) => (
                       <a
                         key={i}
+                        aria-label={sub.name}
                         href={sub.link}
                         className="block text-sm text-gray-700 hover:text-orange-500"
                       >
@@ -142,14 +146,15 @@ const Header = () => {
             } else if (item.megaDropdown) {
               return (
                 <details key={idx} className="group">
-                  <summary className="text-gray-700 font-semibold cursor-pointer hover:text-orange-500">
+                  <summary aria-label={item.name} className="text-gray-700 font-semibold cursor-pointer hover:text-orange-500">
                     {item.name}
                   </summary>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2 pl-2">
                     {item.megaDropdown.map((service, i) => (
                       <span
                         key={i}
-                        className="text-sm text-gray-700 hover:text-orange-500 cursor-pointer"
+                        aria-label={service.name}
+                                className="text-sm text-gray-700 hover:text-orange-500 cursor-pointer"
                       >
                         <Link to={service.link}>{service.name}</Link>
                       </span>
@@ -161,6 +166,7 @@ const Header = () => {
               return (
                 <a
                   key={idx}
+                  aria-label={item.name}
                   href={item.link}
                   className="block text-gray-700 font-semibold hover:text-orange-500"
                 >

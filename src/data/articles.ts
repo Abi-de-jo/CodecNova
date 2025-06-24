@@ -7,7 +7,7 @@ export const articles = [
     excerpt: "Test automation has grown beyond its initial role of bug detection and now empowers end-to-end QA at speed...",
     content: `
       <div class="text">
-        <img width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2025/06/Best-Webcast-Practices.png" alt="Test Automation Trends" class="w-full h-auto rounded-lg" />
+      <img loading="lazy" width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2025/06/Best-Webcast-Practices.png" alt="Test Automation Trends" class="w-full h-auto rounded-lg" />
       </div>
       
       <p><strong>Top 10 Test Automation Trends to Watch in 2025</strong></p>
@@ -19,7 +19,7 @@ export const articles = [
       <p>Here are the top 10 test automation trends shaping QA strategies in 2025:</p>
 
       <figure class="my-6">
-        <img src="https://novaturetech.com/wp-content/uploads/2025/06/testing-services-1-1024x576.png" alt="Testing Services" class="w-full rounded-lg" />
+        <img loading="lazy" src="https://novaturetech.com/wp-content/uploads/2025/06/testing-services-1-1024x576.png" alt="Testing Services" class="w-full rounded-lg" />
       </figure>
 
       <h3 class="text-xl font-bold mt-6 mb-3">1. AI-Powered QA Transformation</h3>
@@ -136,9 +136,9 @@ export const articles = [
       <p class="italic">Follow our page for more insights on QA, test automation, DevOps, and emerging technologies.</p>
 
       <div class="flex space-x-4 mt-6">
-        <a href="#" class="text-blue-600 hover:text-blue-800">Facebook</a>
-        <a href="#" class="text-blue-600 hover:text-blue-800">Twitter</a>
-        <a href="#" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
+        <a href="#" aria-label="Facebook" class="text-blue-600 hover:text-blue-800">Facebook</a>
+        <a href="#" aria-label="Twitter" class="text-blue-600 hover:text-blue-800">Twitter</a>
+        <a href="#" aria-label="LinkedIn" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
       </div>
 
       <hr class="my-6 border-t border-gray-200" />
@@ -156,7 +156,7 @@ export const articles = [
     excerpt: "Banking is transforming rapidly — here's how QA enables innovation, compliance, and customer trust...",
     content: `
       <div class="text">
-        <img width="2560" height="1408" src="https://novaturetech.com/wp-content/uploads/2025/03/The-future-of-AI-in-banking-scaled.jpg" alt="The Future of AI in Banking" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="2560" height="1408" src="https://novaturetech.com/wp-content/uploads/2025/03/The-future-of-AI-in-banking-scaled.jpg" alt="The Future of AI in Banking" class="w-full h-auto rounded-lg" />
       </div>
 
       <p>The banking and finance industry is undergoing a significant transformation, driven by rapid technological advancements, evolving customer expectations, and stringent regulatory requirements...</p>
@@ -238,7 +238,7 @@ export const articles = [
     excerpt: "Digital health apps are evolving. Discover the design challenges and testing needs shaping Dubai's tech ecosystem...",
     content: `
       <div class="text">
-        <img width="624" height="312" src="https://novaturetech.com/wp-content/uploads/2025/01/Healthcare-App-Development-Top-Features-Challenges-to-Consider-624x312-1.jpg" alt="Smart Healthcare App Dubai" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="624" height="312" src="https://novaturetech.com/wp-content/uploads/2025/01/Healthcare-App-Development-Top-Features-Challenges-to-Consider-624x312-1.jpg" alt="Smart Healthcare App Dubai" class="w-full h-auto rounded-lg" />
       </div>
   
       <p>The healthcare landscape in Dubai is undergoing a transformative shift, driven by the demand for cutting-edge digital solutions that prioritize patient care and operational excellence. At Novature Tech, we craft intelligent, scalable, and secure healthcare applications that align with the future of medical innovation.</p>
@@ -277,7 +277,7 @@ export const articles = [
     excerpt: "The rise of AI necessitates a greater emphasis on quality engineering over coding efforts. Coding VS Testing...",
     content: `
       <div class="text">
-        <img width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2024/06/AI_demands_more_quality_Engineering_Efforts_Than_Coding_Efforts-Novature.png" alt="AI Demands Quality Engineering" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2024/06/AI_demands_more_quality_Engineering_Efforts_Than_Coding_Efforts-Novature.png" alt="AI Demands Quality Engineering" class="w-full h-auto rounded-lg" />
       </div>
   
       <p>The rise of AI necessitates a greater emphasis on quality engineering over coding efforts.</p>
@@ -286,7 +286,7 @@ export const articles = [
       <p>While AI accelerates development, it also amplifies the need for rigorous testing. In this new paradigm, testing must outpace coding efforts to ensure performance, security, and usability standards are met.</p>
   
       <div class="text my-4">
-        <img src="https://novaturetech.com/wp-content/uploads/2024/06/Picture2-1024x598.png" alt="AI Quality Engineering Chart" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" src="https://novaturetech.com/wp-content/uploads/2024/06/Picture2-1024x598.png" alt="AI Quality Engineering Chart" class="w-full h-auto rounded-lg" />
       </div>
   
       <h3 class="text-xl font-bold mt-6 mb-3">Functional & Performance Testing</h3>
@@ -320,7 +320,7 @@ export const articles = [
   
       <p>As testing becomes smarter with AI, organizations must still embed rigorous quality practices into every phase of the development lifecycle.</p>
   
-      <p>Contact <a href="mailto:info@novaturetech.com">info@novaturetech.com</a> for strategies tailored to AI application testing.</p>
+      <p>Contact <a aria-label="Email" href="mailto:info@novaturetech.com">info@novaturetech.com</a> for strategies tailored to AI application testing.</p>
   
       <hr class="my-6 border-t border-gray-200" />
   
@@ -338,7 +338,7 @@ export const articles = [
     excerpt: "Explore how AI is revolutionizing QA with automation, predictive insights, and faster feedback loops...",
     content: `
       <div class="text">
-        <img width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2024/06/AI_demands_more_quality_Engineering_Efforts_Than_Coding_Efforts-Novature.png" alt="AI in Quality Engineering" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2024/06/AI_demands_more_quality_Engineering_Efforts_Than_Coding_Efforts-Novature.png" alt="AI in Quality Engineering" class="w-full h-auto rounded-lg" />
       </div>
   
       <p>The rise of AI necessitates a greater emphasis on quality engineering over coding efforts.</p>
@@ -348,7 +348,7 @@ export const articles = [
       <p>Traditionally, testing accounts for about 50% of efforts, but in AI-powered development, it must double to ensure reliability.</p>
   
       <div class="text my-4">
-        <img src="https://novaturetech.com/wp-content/uploads/2024/06/Picture2-1024x598.png" alt="AI Testing Scope" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="1024" height="598" src="https://novaturetech.com/wp-content/uploads/2024/06/Picture2-1024x598.png" alt="AI Testing Scope" class="w-full h-auto rounded-lg" />
       </div>
   
       <h3 class="text-xl font-bold mt-6 mb-3">Functional, Performance & Security Testing</h3>
@@ -404,7 +404,7 @@ export const articles = [
     excerpt: "Test automation has grown beyond its initial role of bug detection and now empowers end-to-end QA at speed...",
     content: `
       <div class="text">
-        <img width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2025/06/Best-Webcast-Practices.png" alt="Test Automation Trends" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2025/06/Best-Webcast-Practices.png" alt="Test Automation Trends" class="w-full h-auto rounded-lg" />
       </div>
       
       <p><strong>Top 10 Test Automation Trends to Watch in 2025</strong></p>
@@ -416,7 +416,7 @@ export const articles = [
       <p>Here are the top 10 test automation trends shaping QA strategies in 2025:</p>
 
       <figure class="my-6">
-        <img src="https://novaturetech.com/wp-content/uploads/2025/06/testing-services-1-1024x576.png" alt="Testing Services" class="w-full rounded-lg" />
+        <img loading="lazy" width="1024" height="576" src="https://novaturetech.com/wp-content/uploads/2025/06/testing-services-1-1024x576.png" alt="Testing Services" class="w-full rounded-lg" />
       </figure>
 
       <h3 class="text-xl font-bold mt-6 mb-3">1. AI-Powered QA Transformation</h3>
@@ -533,9 +533,9 @@ export const articles = [
       <p class="italic">Follow our page for more insights on QA, test automation, DevOps, and emerging technologies.</p>
 
       <div class="flex space-x-4 mt-6">
-        <a href="#" class="text-blue-600 hover:text-blue-800">Facebook</a>
-        <a href="#" class="text-blue-600 hover:text-blue-800">Twitter</a>
-        <a href="#" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
+        <a href="#" aria-label="Facebook" class="text-blue-600 hover:text-blue-800">Facebook</a>
+        <a href="#" aria-label="Twitter" class="text-blue-600 hover:text-blue-800">Twitter</a>
+        <a href="#" aria-label="LinkedIn" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
       </div>
 
       <hr class="my-6 border-t border-gray-200" />
@@ -553,7 +553,7 @@ export const articles = [
     excerpt: "Banking is transforming rapidly — here's how QA enables innovation, compliance, and customer trust...",
     content: `
       <div class="text">
-        <img width="2560" height="1408" src="https://novaturetech.com/wp-content/uploads/2025/03/The-future-of-AI-in-banking-scaled.jpg" alt="The Future of AI in Banking" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="2560" height="1408" src="https://novaturetech.com/wp-content/uploads/2025/03/The-future-of-AI-in-banking-scaled.jpg" alt="The Future of AI in Banking" class="w-full h-auto rounded-lg" />
       </div>
 
       <p>The banking and finance industry is undergoing a significant transformation, driven by rapid technological advancements, evolving customer expectations, and stringent regulatory requirements...</p>
@@ -635,7 +635,7 @@ export const articles = [
     excerpt: "Digital health apps are evolving. Discover the design challenges and testing needs shaping Dubai's tech ecosystem...",
     content: `
       <div class="text">
-        <img width="624" height="312" src="https://novaturetech.com/wp-content/uploads/2025/01/Healthcare-App-Development-Top-Features-Challenges-to-Consider-624x312-1.jpg" alt="Smart Healthcare App Dubai" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="624" height="312" src="https://novaturetech.com/wp-content/uploads/2025/01/Healthcare-App-Development-Top-Features-Challenges-to-Consider-624x312-1.jpg" alt="Smart Healthcare App Dubai" class="w-full h-auto rounded-lg" />
       </div>
   
       <p>The healthcare landscape in Dubai is undergoing a transformative shift, driven by the demand for cutting-edge digital solutions that prioritize patient care and operational excellence. At Novature Tech, we craft intelligent, scalable, and secure healthcare applications that align with the future of medical innovation.</p>
@@ -674,7 +674,7 @@ export const articles = [
     excerpt: "The rise of AI necessitates a greater emphasis on quality engineering over coding efforts. Coding VS Testing...",
     content: `
       <div class="text">
-        <img width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2024/06/AI_demands_more_quality_Engineering_Efforts_Than_Coding_Efforts-Novature.png" alt="AI Demands Quality Engineering" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2024/06/AI_demands_more_quality_Engineering_Efforts_Than_Coding_Efforts-Novature.png" alt="AI Demands Quality Engineering" class="w-full h-auto rounded-lg" />
       </div>
   
       <p>The rise of AI necessitates a greater emphasis on quality engineering over coding efforts.</p>
@@ -683,7 +683,7 @@ export const articles = [
       <p>While AI accelerates development, it also amplifies the need for rigorous testing. In this new paradigm, testing must outpace coding efforts to ensure performance, security, and usability standards are met.</p>
   
       <div class="text my-4">
-        <img src="https://novaturetech.com/wp-content/uploads/2024/06/Picture2-1024x598.png" alt="AI Quality Engineering Chart" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="1024" height="598" src="https://novaturetech.com/wp-content/uploads/2024/06/Picture2-1024x598.png" alt="AI Quality Engineering Chart" class="w-full h-auto rounded-lg" />
       </div>
   
       <h3 class="text-xl font-bold mt-6 mb-3">Functional & Performance Testing</h3>
@@ -717,7 +717,7 @@ export const articles = [
   
       <p>As testing becomes smarter with AI, organizations must still embed rigorous quality practices into every phase of the development lifecycle.</p>
   
-      <p>Contact <a href="mailto:info@novaturetech.com">info@novaturetech.com</a> for strategies tailored to AI application testing.</p>
+      <p>Contact <a aria-label="Email" href="mailto:info@novaturetech.com">info@novaturetech.com</a> for strategies tailored to AI application testing.</p>
   
       <hr class="my-6 border-t border-gray-200" />
   
@@ -735,7 +735,7 @@ export const articles = [
     excerpt: "Explore how AI is revolutionizing QA with automation, predictive insights, and faster feedback loops...",
     content: `
       <div class="text">
-        <img width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2024/06/AI_demands_more_quality_Engineering_Efforts_Than_Coding_Efforts-Novature.png" alt="AI in Quality Engineering" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="2240" height="1260" src="https://novaturetech.com/wp-content/uploads/2024/06/AI_demands_more_quality_Engineering_Efforts_Than_Coding_Efforts-Novature.png" alt="AI in Quality Engineering" class="w-full h-auto rounded-lg" />
       </div>
   
       <p>The rise of AI necessitates a greater emphasis on quality engineering over coding efforts.</p>
@@ -745,7 +745,7 @@ export const articles = [
       <p>Traditionally, testing accounts for about 50% of efforts, but in AI-powered development, it must double to ensure reliability.</p>
   
       <div class="text my-4">
-        <img src="https://novaturetech.com/wp-content/uploads/2024/06/Picture2-1024x598.png" alt="AI Testing Scope" class="w-full h-auto rounded-lg" />
+        <img loading="lazy" width="1024" height="598" src="https://novaturetech.com/wp-content/uploads/2024/06/Picture2-1024x598.png" alt="AI Testing Scope" class="w-full h-auto rounded-lg" />
       </div>
   
       <h3 class="text-xl font-bold mt-6 mb-3">Functional, Performance & Security Testing</h3>
@@ -783,7 +783,7 @@ export const articles = [
   
       <p>AI streamlines test cycles and improves coverage, but integrating these tools requires strategic planning and continuous improvement.</p>
   
-      <p>For tailored QA strategies in the AI era, contact <a href="mailto:info@novaturetech.com">info@novaturetech.com</a>.</p>
+      <p>For tailored QA strategies in the AI era, contact <a aria-label="Email" href="mailto:info@novaturetech.com">info@novaturetech.com</a>.</p>
   
       <hr class="my-6 border-t border-gray-200" />
   
