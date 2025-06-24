@@ -37,6 +37,7 @@ import CiCdPipeline from "./Services/CiCdPipeline";
 import SingleArticle from "./Components/SingleArticle";
 import NOTFound from "./Components/NOTFound";
 
+
 function App() {
   return (
     <div className="bg-[var(--background-cream)]">

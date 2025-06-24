@@ -4,8 +4,6 @@ import {
   FaSearch,
   FaHandshake,
   FaClipboardList,
-  FaCogs,
-  FaTools,
   FaChevronDown,
   FaChevronUp
 } from "react-icons/fa";
@@ -123,20 +121,22 @@ const TestProcessConsulting = () => {
       title: "Consulting Approach",
       icon: <FaSearch className="text-xl" />,
       description: "Our methodology for assessing and improving test processes",
-      content: (
-        <div className="space-y-4">
-          <p>
-            We measure the maturity of your Testing Organization with proven checklists 
-            and frameworks, providing a detailed assessment of your current state and 
-            building a roadmap to steady state.
-          </p>
-          <img 
-            src="https://novaturetech.com/wp-content/themes/novature/assets/images/test_process1.png" 
-            alt="Test Process Consulting Approach" 
-            className="rounded-lg border border-gray-200 w-full"
-          />
-        </div>
-      )
+      content: {
+        content: (
+          <div className="space-y-4">
+            <p>
+              We measure the maturity of your Testing Organization with proven checklists 
+              and frameworks, providing a detailed assessment of your current state and 
+              building a roadmap to steady state.
+            </p>
+            <img 
+              src="https://novaturetech.com/wp-content/themes/novature/assets/images/test_process1.png" 
+              alt="Test Process Consulting Approach" 
+              className="rounded-lg border border-gray-200 w-full"
+            />
+          </div>
+        )
+      }
     },
     {
       id: 'offerings',
@@ -342,7 +342,7 @@ const TestProcessConsulting = () => {
                               Key Enablers
                             </h5>
                             <ul className="space-y-2">
-                              {activeSection.enablers.map((enabler, i) => (
+                              {activeSection.enablers?.map((enabler, i) => (
                                 <li key={i} className="flex items-start">
                                   <div className="w-1.5 h-1.5 bg-[var(--secondary-blue)] rounded-full mt-2 mr-2"></div>
                                   <span>{enabler}</span>
@@ -355,7 +355,7 @@ const TestProcessConsulting = () => {
                               Key Benefits
                             </h5>
                             <ul className="space-y-2">
-                              {activeSection.benefits.map((benefit, i) => (
+                              {activeSection.benefits?.map((benefit, i) => (
                                 <li key={i} className="flex items-start">
                                   <div className="w-1.5 h-1.5 bg-orange-400 rounded-full mt-2 mr-2"></div>
                                   <span>{benefit}</span>
@@ -388,13 +388,13 @@ const TestProcessConsulting = () => {
                 ) : (
                   <div className="space-y-6">
                     {/* Compact View Content */}
-                    {activeSection?.content?.overview && (
+                    {activeSection?.content && 'overview' in activeSection.content && (
                       <div>
                         {activeSection.content.overview}
                       </div>
                     )}
 
-                    {activeSection?.content?.focusAreas && (
+                    {activeSection?.content && 'focusAreas' in activeSection.content && (
                       <div>
                         <h4 className="text-lg font-semibold text-[var(--primary-blue)] mb-3">
                           Key Focus Areas
@@ -410,9 +410,9 @@ const TestProcessConsulting = () => {
                       </div>
                     )}
 
-                    {activeSection?.content && typeof activeSection.content === 'object' && !activeSection.content.focusAreas && (
+                    {activeSection?.content && 'content' in activeSection.content && (
                       <div>
-                        {activeSection.content}
+                        {activeSection.content.content}
                       </div>
                     )}
 
