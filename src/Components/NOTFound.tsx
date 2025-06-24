@@ -12,9 +12,9 @@ const NotFound = () => {
           </div>
           
           {/* Title */}
-          <h2 className="text-4xl font-bold text-[var(--primary-blue)] mb-4">
+          <h1 className="text-4xl font-bold text-[var(--primary-blue)] mb-4">
             404 - Page Not Found
-          </h2>
+          </h1>
           <div className="w-24 h-1 bg-[var(--secondary-blue)] mx-auto mb-6"></div>
           
           {/* Message */}

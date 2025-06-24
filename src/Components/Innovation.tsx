@@ -10,9 +10,9 @@ const Innovation = () => {
          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-0" />
   
         <div className="relative z-10 max-w-5xl mx-auto text-center text-white space-y-6">
-          <h2 className="text-4xl font-bold text-[var(--primary-blue)]">
+          <h1 className="text-4xl font-bold text-[var(--primary-blue)]">
             INNOVATION FOR FUTURE
-          </h2>
+          </h1>
   
           <div className="w-24 h-1 mx-auto bg-[var(--primary-blue)] rounded-full" />
   

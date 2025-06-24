@@ -7,10 +7,10 @@ const WhoWeAreSingle = () => {
             <span className="inline-block px-4 py-2 text-sm font-semibold text-[var(--secondary-blue)] bg-[var(--light-blue)]/20 rounded-full mb-4">
               OUR IDENTITY
             </span>
-            <h2 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4 relative pb-6">
+            <h1 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4 relative pb-6">
               WHO WE ARE
               <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-[var(--secondary-blue)] rounded-full"></span>
-            </h2>
+            </h1>
             <p className="max-w-2xl mx-auto text-gray-600">
               Blending innovation and expertise to deliver exceptional quality assurance solutions
             </p>

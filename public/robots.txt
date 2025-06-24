@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://codec-nova.vercel.app/sitemap.xml

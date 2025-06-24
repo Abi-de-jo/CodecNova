@@ -35,9 +35,9 @@ const Insights = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4">
+          <h1 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4">
             Insights & Articles
-          </h2>
+          </h1>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Stay updated with the latest trends, innovations, and thought leadership from the software quality world.
           </p>

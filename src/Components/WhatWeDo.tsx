@@ -39,9 +39,9 @@ const WhatWeDo = () => {
   return (
     <section className="bg-gradient-to-b from-white to-[var(--background-cream)] py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4">
+        <h1 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4">
           Explore Our Specialized Services
-        </h2>
+        </h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
           We offer a wide range of independent testing solutions designed to support complex enterprise IT ecosystems.
         </p>

@@ -6,9 +6,9 @@ const Careers = () => {
     <section className="bg-[var(--background-cream)] py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4">
+          <h1 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4">
             Join Our Team
-          </h2>
+          </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             We're always looking for talented individuals to join our growing team.
           </p>

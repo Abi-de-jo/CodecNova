@@ -9,7 +9,7 @@ const SingleArticle = () => {
   if (!article) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-[#f9f9f9] p-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-red-500 mb-4">Article not found</h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-red-500 mb-4">Article not found</h1>
         <Link
           to="/insights"
           className="inline-flex items-center text-[var(--secondary-blue)] hover:text-[var(--primary-blue)] mt-4 px-6 py-2 border border-[var(--secondary-blue)] rounded-lg transition-all"

@@ -41,9 +41,9 @@ const WhoWeAre = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
         {/* LEFT SIDE */}
         <div>
-          <h2 className="text-3xl font-bold text-[var(--primary-blue)] mb-4">
+          <h1 className="text-3xl font-bold text-[var(--primary-blue)] mb-4">
             WHO WE ARE?
-          </h2>
+          </h1>
           
           <img
             src="https://cdn.pixabay.com/photo/2013/01/26/04/50/man-76202_1280.jpg"
@@ -61,10 +61,10 @@ const WhoWeAre = () => {
         </div>
 
          <div>
-          <h2 className="text-3xl font-bold text-[var(--primary-blue)] mb-6">
+          <h1 className="text-3xl font-bold text-[var(--primary-blue)] mb-6">
             OUR BUILDING BLOCKS
             
-          </h2>
+          </h1>
           
 
 

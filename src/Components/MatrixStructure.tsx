@@ -4,9 +4,9 @@ const MatrixStructure = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
           {/* LEFT: Content */}
           <div className="text-gray-800 animate-fadeInUp">
-            <h2 className="text-4xl font-bold text-[var(--primary-blue)] mb-4">
+            <h1 className="text-4xl font-bold text-[var(--primary-blue)] mb-4">
               How We Work
-            </h2>
+            </h1>
             <div className="w-20 h-1 bg-[var(--primary-blue)] mb-6 rounded-full" />
   
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">Matrix Structure</h3>

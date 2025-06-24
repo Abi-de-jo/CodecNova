@@ -35,9 +35,9 @@ const ContactUs = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
         {/* ADDRESS BLOCK */}
         <div className="space-y-8">
-          <h2 className="text-3xl font-extrabold text-[var(--primary-blue)] mb-8">
+          <h1 className="text-3xl font-extrabold text-[var(--primary-blue)] mb-8">
             Get in Touch
-          </h2>
+          </h1>
 
           <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-white/50">
             <div className="flex items-start mb-6">

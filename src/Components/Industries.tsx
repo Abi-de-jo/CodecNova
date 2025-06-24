@@ -15,7 +15,7 @@ const Industries = () => {
   return (
     <section className="bg-[var(--background-cream)]  py-20 px-4 md:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold text-[var(--primary-blue)] mb-2">WHOM WE WORK</h2>
+        <h1 className="text-4xl font-bold text-[var(--primary-blue)] mb-2">WHOM WE WORK</h1>
         <div className="w-20 h-1 bg-[var(--primary-blue)] mx-auto rounded-full"></div>
       </div>
 

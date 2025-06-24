@@ -27,7 +27,7 @@ const clientLogos = [
     return (
         <section className="bg-[var(--background-cream)] py-16 px-4 md:px-16">
         <div className="max-w-7xl mx-auto text-center mb-10">
-          <h2 className="text-4xl font-bold text-[var(--primary-blue)] mb-2">TRUSTED BY</h2>
+          <h1 className="text-4xl font-bold text-[var(--primary-blue)] mb-2">TRUSTED BY</h1>
           <div className="w-20 h-1 bg-[var(--primary-blue)] mx-auto rounded-full" />
         </div>
   
