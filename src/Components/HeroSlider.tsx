@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+
 const slides = [
   {
     id: 1,
@@ -9,7 +10,6 @@ const slides = [
     sub: "Get an opportunity to work with the experts.",
     buttonText: "Check out our Solutions...",
     link: "/solutions",
-    alt: "Team collaborating on software development"
   },
   {
     id: 2,
@@ -18,7 +18,6 @@ const slides = [
     sub: "Empowering businesses through technology.",
     buttonText: "Explore Services",
     link: "/services",
-    alt: "Business technology solutions"
   },
   {
     id: 3,
@@ -27,7 +26,6 @@ const slides = [
     sub: "Delivering value with integrity.",
     buttonText: "Meet Our Team",
     link: "/team",
-    alt: "Professional team working together"
   },
   {
     id: 4,
@@ -36,7 +34,6 @@ const slides = [
     sub: "Solutions built for the future.",
     buttonText: "Our Technologies",
     link: "/tech",
-    alt: "Secure technology infrastructure"
   },
   {
     id: 5,
@@ -45,79 +42,44 @@ const slides = [
     sub: "Join us in leading the digital revolution.",
     buttonText: "Join the Movement",
     link: "/join",
-    alt: "Digital transformation concept"
   },
 ];
 
 const HeroSlider = () => {
   return (
-    <section aria-label="Featured content slider" role="region">
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        }}
-        pagination={{ 
-          clickable: true,
-          el: '.swiper-pagination',
-          type: 'bullets',
-        }}
-        loop
-        autoplay={{ 
-          delay: 4000,
-          disableOnInteraction: false 
-        }}
-        className="h-[85vh]"
-        aria-live="polite"
-      >
-        {slides.map((slide) => (
-          <SwiperSlide key={slide.id}>
-            <article 
-              className="h-full bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4"
-              style={{ backgroundImage: `url(${slide.img})` }}
-              aria-labelledby={`slide-heading-${slide.id}`}
-            >
-              {/* Hidden image for SEO and accessibility */}
-              <img 
-                src={slide.img} 
-                alt={slide.alt} 
-                className="hidden" 
-                aria-hidden="true"
-                loading="lazy"
-              />
-              
-              <div 
-                className="bg-black/30 backdrop-blur-[1px] p-6 rounded-md"
-                role="presentation"
-              >
-                <h1 
-                  id={`slide-heading-${slide.id}`}
-                  className="text-3xl md:text-5xl font-extrabold mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] animate-fadeInDown"
-                >
-                  {slide.heading}
-                </h1>
-                <p className="text-lg md:text-xl mb-6 drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] animate-fadeInUp">
-                  {slide.sub}
-                </p>
-                <a
-                  href={slide.link}
-                  className="border-2 border-white px-6 py-2 hover:bg-white rounded-md hover:text-black transition font-semibold focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black/30"
-                  aria-label={`${slide.buttonText} - ${slide.heading}`}
-                >
-                  {slide.buttonText}
-                </a>
-              </div>
-            </article>
-          </SwiperSlide>
-        ))}
-        
-        {/* Custom navigation elements for better accessibility */}
-        <div className="swiper-button-next" aria-label="Next slide"></div>
-        <div className="swiper-button-prev" aria-label="Previous slide"></div>
-        <div className="swiper-pagination" aria-label="Slide navigation"></div>
-      </Swiper>
-    </section>
+    <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      navigation
+      pagination={{ clickable: true }}
+      loop
+      autoplay={{ delay: 4000 }}
+      className="h-[85vh]"
+    >
+      {slides.map((slide) => (
+        <SwiperSlide key={slide.id}>
+<div
+  className="h-full bg-cover bg-center flex flex-col justify-center items-center text-white text-center px-4"
+  style={{ backgroundImage: `url(${slide.img})` }}
+>
+  <div className="bg-black/30 backdrop-blur-[1px] p-6 rounded-md">
+    <h1 className="text-3xl md:text-5xl font-extrabold mb-3 drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)] animate-fadeInDown">
+      {slide.heading}
+    </h1>
+    <p className="text-lg md:text-xl mb-6 drop-shadow-[0_1px_3px_rgba(0,0,0,0.6)] animate-fadeInUp">
+      {slide.sub}
+    </p>
+    <a
+      href={slide.link}
+      className="border-2 border-white px-6 py-2 hover:bg-white rounded-md hover:text-black transition font-semibold"
+    >
+      {slide.buttonText}
+    </a>
+  </div>
+</div>
+
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 };
 

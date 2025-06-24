@@ -37,63 +37,30 @@ const WhatWeDo = () => {
   const navigate = useNavigate();
 
   return (
-    <section 
-      className="bg-gradient-to-b from-white to-[var(--background-cream)] py-20 px-4 md:px-8"
-      aria-labelledby="services-heading"
-      itemScope
-      itemType="https://schema.org/Service"
-    >
+    <section className="bg-gradient-to-b from-white to-[var(--background-cream)] py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto text-center mb-12">
-        <h1 
-          id="services-heading" 
-          className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4"
-          itemProp="name"
-        >
+        <h1 className="text-4xl font-extrabold text-[var(--primary-blue)] mb-4">
           Explore Our Specialized Services
         </h1>
-        <p 
-          className="text-gray-600 max-w-2xl mx-auto"
-          itemProp="description"
-        >
+        <p className="text-gray-600 max-w-2xl mx-auto">
           We offer a wide range of independent testing solutions designed to support complex enterprise IT ecosystems.
         </p>
       </div>
 
-      <div 
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto"
-        role="list"
-        aria-label="Our services"
-      >
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
         {services.map((service, index) => (
-          <article
+          <div
             key={index}
             onClick={() => navigate(service.path)}
             className="group cursor-pointer bg-white hover:bg-[var(--light-blue)] transition-all duration-300 border border-white rounded-xl p-6 shadow-sm hover:shadow-xl text-center flex flex-col items-center gap-4"
-            role="listitem"
-            itemScope
-            itemType="https://schema.org/Service"
           >
-            <div 
-              className="text-3xl text-[var(--secondary-blue)] group-hover:text-white"
-              aria-hidden="true"
-            >
+            <div className="text-3xl text-[var(--secondary-blue)] group-hover:text-white">
               {service.icon}
             </div>
-            <h2 
-              className="text-sm font-semibold text-gray-700 group-hover:text-white text-center leading-tight"
-              itemProp="name"
-            >
-              <a 
-                href={service.path} 
-                className="focus:outline-none focus:ring-2 focus:ring-[var(--secondary-blue)] focus:ring-offset-2 rounded"
-                aria-label={`Learn more about ${service.label}`}
-                itemProp="url"
-              >
-                {service.label}
-              </a>
-            </h2>
-            <meta itemProp="serviceType" content={service.label} />
-          </article>
+            <h4 className="text-sm font-semibold text-gray-700 group-hover:text-white text-center leading-tight">
+              {service.label}
+            </h4>
+          </div>
         ))}
       </div>
     </section>
