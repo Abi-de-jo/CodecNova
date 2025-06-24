@@ -9,7 +9,7 @@ import MatrixStructure from "./Components/MatrixStructure";
 import TrustedClients from "./Components/TrustedClients";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
- 
+
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 // import OurLeaders from "./Components/OurLeaders ";
@@ -37,18 +37,17 @@ import CiCdPipeline from "./Services/CiCdPipeline";
 import SingleArticle from "./Components/SingleArticle";
 import NOTFound from "./Components/NOTFound";
 
-
 function App() {
   return (
     <div className="bg-[var(--background-cream)]">
       <Router>
-      <ScrollToTop />
+        <ScrollToTop />
 
-         <TopBar />
+        <TopBar />
         <Header />
 
         <Routes>
-           <Route
+          <Route
             path="/"
             element={
               <>
@@ -78,7 +77,6 @@ function App() {
               </>
             }
           />
-
 
           <Route
             path="/insights"
@@ -110,10 +108,8 @@ function App() {
               <>
                 <MobileTesting />
               </>
-
             }
           />
-
 
           <Route
             path="/services/data-analytics"
@@ -122,7 +118,7 @@ function App() {
                 <DataAnalyticsTesting />
               </>
             }
-          />  
+          />
 
           <Route
             path="/services/agile-testing"
@@ -140,7 +136,7 @@ function App() {
                 <TestAutomation />
               </>
             }
-          />  
+          />
 
           <Route
             path="/services/iot-testing"
@@ -149,7 +145,7 @@ function App() {
                 <IoTTesting />
               </>
             }
-          />  
+          />
 
           <Route
             path="/services/non-functional"
@@ -158,7 +154,7 @@ function App() {
                 <NonFunctionalTesting />
               </>
             }
-          />    
+          />
 
           <Route
             path="/services/security-testing"
@@ -167,7 +163,7 @@ function App() {
                 <SecurityTesting />
               </>
             }
-          />    
+          />
 
           <Route
             path="/services/process-consulting"
@@ -192,8 +188,7 @@ function App() {
                 <QualityAssurance />
               </>
             }
-          />  
-
+          />
 
           <Route
             path="/services/test-data"
@@ -202,9 +197,7 @@ function App() {
                 <TestDataManagement />
               </>
             }
-          />    
-          
-
+          />
 
           <Route
             path="/services/environment-management"
@@ -213,8 +206,7 @@ function App() {
                 <TestEnvironmentManagement />
               </>
             }
-          />    
-
+          />
 
           <Route
             path="/services/webservices"
@@ -223,10 +215,7 @@ function App() {
                 <ApiTesting />
               </>
             }
-          />    
-
-
-
+          />
 
           <Route
             path="/services/ci-cd"
@@ -235,9 +224,7 @@ function App() {
                 <CiCdPipeline />
               </>
             }
-          />    
-
-
+          />
 
           <Route
             path="/contact"
@@ -256,10 +243,8 @@ function App() {
             }
           />
 
-
-<Route path="/insights/:id" element={<SingleArticle />} />
-<Route path ="/*" element={<NOTFound />} />
-
+          <Route path="/insights/:id" element={<SingleArticle />} />
+          <Route path="/*" element={<NOTFound />} />
         </Routes>
 
         <Footer />
